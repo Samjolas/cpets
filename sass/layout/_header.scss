@@ -1,6 +1,6 @@
 @use "../abstracts" as a;
 
-.header {
+.header,.about {
   --bg--image: url("../assests/main/background.png") no-repeat fixed center;
   --bg-image-opacity: .5;
   background: a.$color-black;

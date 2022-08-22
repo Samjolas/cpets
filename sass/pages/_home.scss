@@ -73,6 +73,37 @@
   }
 }
 
+.about {
+  
+  &__details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2rem;
+    gap: 4rem;
+    
+  }
+  &__des {
+    flex: 2;
+    & > p {
+      font-size: 1rem;
+      line-height: 1.8;
+      text-align: justify;
+      color: a.$color-white;
+      padding: 5rem 0;
+    }
+  }
+  &__pic {
+    flex: 1;
+  }
+  &__road {
+    text-align: center;
+    color: a.$color-white;
+    font-size: 1.5rem;
+  }
+  
+  
+}
 
 @media screen and (max-width: 900px) {
   .hero {
@@ -83,6 +114,21 @@
   .team {
     &__name {
       font-size: 1.2rem;
+    }
+  }
+  .about {
+    &__des {
+      flex: 2.5;
+      & > p {
+        font-size: .9rem;
+        line-height: 1.6;
+        text-align: justify;
+        color: a.$color-white;
+        padding: 5rem 0;
+      }
+    }
+    &__road {
+      font-size: 1.3rem;
     }
   }
 }
@@ -120,12 +166,54 @@
       font-size: .4rem;
     }
   }
+  .about {
+    &__details {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    &__des {
+      flex: 2.5;
+      & > p {
+        font-size: .75rem;
+        line-height: 1.6;
+        padding: 0;
+        margin-top: -3.5rem;
+      }
+    }
+    &__img {
+      height: 9rem;
+    }
+    &__road {
+      font-size: 1.1rem;
+    }
+  }
 }
 
 @media screen and (max-width: 375px) {
   .hero {
     &__heading {
       font-size: 1rem;
+    }
+  }
+  .about {
+    &__details {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    &__des {
+      flex: 2.5;
+      & > p {
+        font-size: .5rem;
+        line-height: 1.5;
+        padding: 0;
+        margin-top: -3.5rem;
+      }
+    }
+    &__img {
+      height: 5rem;
+    }
+    &__road {
+      font-size: .9rem;
     }
   }
 }
