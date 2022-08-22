@@ -1,0 +1,20 @@
+@use "../abstracts" as a;
+
+.btn {
+  width: 10rem;
+  height: 3rem;
+  background: a.$color-yellow;
+  color: a.$color-white;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  margin: auto;
+
+  &:hover {
+    background: a.$color-brown;
+    transform: translateY(-.05rem);
+  }
+  &:active {
+    transform: translateY(.05rem);
+  }
+}

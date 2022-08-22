@@ -1,0 +1,8 @@
+@use "../abstracts" as a;
+
+.mint {
+  height: 100vh;
+  &__heading {
+    color: a.$color-yellow;
+  }
+}

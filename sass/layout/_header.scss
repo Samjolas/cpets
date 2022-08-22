@@ -1,0 +1,19 @@
+@use "../abstracts" as a;
+
+.header {
+  --bg--image: url("../assests/main/background.png") no-repeat fixed center;
+  --bg-image-opacity: .5;
+  background: a.$color-black;
+  height: 100vh;
+  position: relative;
+  isolation: isolate;
+  &::after{
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    opacity: var(--bg-image-opacity);
+    background: var(--bg--image);
+    background-size: cover;
+  }
+}
